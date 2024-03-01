@@ -1,0 +1,72 @@
+.container-imc {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50rem;
+    padding: 4.375rem 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(1.25rem);
+  
+    .image {
+      width: 50%;
+      text-align: center;
+    }
+  
+    .content {
+      width: 50%;
+      color: $text;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+  
+      h1 {
+        color: $title-text;
+        font-size: 2rem;
+        margin-top: 2.188rem;
+      }
+  
+      form {
+        margin-top: 1.563rem;
+        display: flex;
+        flex-direction: column;
+  
+        input {
+          height: 1.875rem;
+          box-sizing: border-box;
+          border: solid 1px #cccccc;
+          border-radius: 3px;
+          margin-bottom: 0.625rem;
+        }
+  
+        button {
+          @include botao(); //chamando o mixin botao
+        }
+      }
+
+      #result{
+        text-align: center;
+        margin-top: 5px;
+       // background-color: green;
+        color: white;
+        padding: 5px;
+        display: none;
+      }
+
+    }
+
+@media (max-width:860px){
+
+  width: 90%;
+  .image{
+    display: none;
+  }
+
+  .content{
+    width: 100%;
+  }
+}
+
+
+  }
+  
+
+  

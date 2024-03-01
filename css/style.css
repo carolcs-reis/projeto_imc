@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #003366;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: right center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-imc {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 50rem;
+  padding: 4.375rem 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  -webkit-backdrop-filter: blur(1.25rem);
+          backdrop-filter: blur(1.25rem);
+}
+.container-imc .image {
+  width: 50%;
+  text-align: center;
+}
+.container-imc .content {
+  width: 50%;
+  color: #666666;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.container-imc .content h1 {
+  color: #333333;
+  font-size: 2rem;
+  margin-top: 2.188rem;
+}
+.container-imc .content form {
+  margin-top: 1.563rem;
+  display: flex;
+  flex-direction: column;
+}
+.container-imc .content form input {
+  height: 1.875rem;
+  box-sizing: border-box;
+  border: solid 1px #cccccc;
+  border-radius: 3px;
+  margin-bottom: 0.625rem;
+}
+.container-imc .content form button {
+  border: none;
+  background-color: #003366;
+  border-radius: 20px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+}
+.container-imc .content form button:hover {
+  background-color: #ff3131;
+}
+.container-imc .content #result {
+  text-align: center;
+  margin-top: 5px;
+  color: white;
+  padding: 5px;
+  display: none;
+}
+@media (max-width: 860px) {
+  .container-imc {
+    width: 90%;
+  }
+  .container-imc .image {
+    display: none;
+  }
+  .container-imc .content {
+    width: 100%;
+  }
+}
+
+.info {
+  background-color: #ff3131;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.info p {
+  color: white;
+  max-width: 700px;
+}
+.info button {
+  border: none;
+  background-color: #003366;
+  border-radius: 20px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.info button:hover {
+  background-color: #ff3131;
+}
+.info button:hover {
+  background-color: black;
+}
+@media (max-width: 860px) {
+  .info {
+    flex-direction: column;
+    row-gap: 0.625rem;
+    box-sizing: border-box;
+  }
+}/*# sourceMappingURL=style.css.map */
